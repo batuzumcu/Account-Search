@@ -1,18 +1,25 @@
-# Salesforce DX Project: Next Steps
+# Salesforce-PersonAccount-Search
+A straightforward and efficient tool that enables Salesforce users to search for person account records based on specific search strings, displaying a list of matched records.
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+# Features
+**Search Functionality:** Allows users to search for person account records based on a given string, matching against the first or last name fields.
 
-## How Do You Plan to Deploy Your Changes?
+**Result Display:** All matched person account records are displayed, showcasing basic account information, namely first and last names.
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
+**Installation**
 
-## Configure Your Salesforce DX Project
+Clone this repository to your local machine.
+Deploy the solution to your Salesforce org using Salesforce CLI or your preferred deployment tool.
+Ensure that the required permissions for the components are set up correctly.
+Note: It's advisable to test the functionality in a sandbox or developer environment before deploying to production.
 
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
+**Usage**
 
-## Read All About It
+Navigate to the designated Salesforce tab containing the component.
+Enter your search string in the provided textbox.
+Click the "Search" button.
+Browse through the displayed list of person account records that match your search criteria.
 
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+**Contribution**
+
+Contributions are welcome! Please create a pull request with your proposed changes for review. Ensure that any modifications maintain the solution's simplicity and functionality.
