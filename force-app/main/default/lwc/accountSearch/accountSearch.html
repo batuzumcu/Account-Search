@@ -1,0 +1,46 @@
+<!-- Created by Batuhan Uzumcu on 11/10/2023. -->
+
+<!-- Account Search Component -->
+<template>
+    <div class="slds-box">
+
+        <!-- Title Section -->
+        <h2 class="search-title">Search Person Accounts</h2>
+
+        <!-- Search Section -->
+        <div class="search-container">
+
+            <!-- Search Input -->
+            <div class="search-input-container">
+                <input type="text" class="slds-input" placeholder="Search Person Account..." value={searchString} onchange={handleSearchChange} />
+            </div>
+
+            <!-- Search Button -->
+            <lightning-button class="slds-button_large" label="Search" variant="brand" onclick={handleSearch}></lightning-button>
+
+        </div>
+
+        <!-- Result List Section -->
+        <template if:true={showResults}>
+            <lightning-datatable
+                    key-field="Id"
+                    data={accounts}
+                    columns={columns}
+                    hide-checkbox-column="true"
+                    onrowaction={handleRowAction}>
+            </lightning-datatable>
+
+            <!-- Display message if no results found -->
+            <template if:true={noResultsFound}>
+                <p>No records found.</p>
+            </template>
+
+            <!-- Pagination controls -->
+            <div class="pagination slds-m-top_medium">
+                <lightning-button label="Previous" onclick={handlePreviousPage} disabled={isPreviousButtonDisabled}></lightning-button>
+                <span class="page-info">{displayPageInfo}</span>
+                <lightning-button label="Next" onclick={handleNextPage} disabled={isNextButtonDisabled}></lightning-button>
+            </div>
+        </template>
+    </div>
+</template>

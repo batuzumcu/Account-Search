@@ -1,0 +1,56 @@
+/**
+ * Created by Batuhan Uzumcu on 11/10/2023.
+ */
+
+.slds-box {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: #f4f6f9;
+    margin-bottom: 1rem;
+}
+
+.search-input-container {
+    flex: 1;
+    margin-right: 1rem;
+}
+
+.search-title {
+    font-size: 1.5rem;
+    color: #0070d2;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #f3f2f2;
+    padding-bottom: 0.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    color: #a4a2a2;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 0.25rem;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-info {
+    margin: 0 1rem;
+}
